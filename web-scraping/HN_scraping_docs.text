@@ -50,3 +50,6 @@ def create_custom_hn(votes, links):
     return sorted(hn, key=lambda hn: hn['points'], reverse=True)
 
 print(create_custom_hn(votes, links))
+
+pprint.pprint(multi_page_data(2), len(multi_page_data(2))) 
+#pprint isnt working with len(). learn more.  
