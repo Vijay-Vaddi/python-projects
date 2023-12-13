@@ -1,3 +1,8 @@
+# BEFORE WEB SCRAPING CHECK IF THE WEBSITE HAS AN API WHICH GIVES YOU THE data
+# SCRAPPY FRAMEWORK IS BeautifulSoup WITH MORE TOOLS FOR SCRAPPING MASSIVE DATA 
+# view source and search for the item you want to scrape. 
+# if there's no id, element, class, its probably loaded dynamically using javascript
+
 import requests
 from bs4 import BeautifulSoup
 
