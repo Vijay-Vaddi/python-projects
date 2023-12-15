@@ -15,6 +15,7 @@ def getStockData(orgs):
         # print(soup.title.text) #to test if its working. a good method and a step. 
         # print(soup)
         stock = {
+                    'price' : soup.find('fin-streamer', {'class':"Fw(b) Fz(36px) Mb(-4px) D(ib)"}).find_all('span').text, for multiple layering
         'price' : soup.find('fin-streamer', {'class':"Fw(b) Fz(36px) Mb(-4px) D(ib)"}).text,
         'change' : soup.find('fin-streamer', {'class':"Fw(500) Pstart(8px) Fz(24px)"}).text
         }
