@@ -1,0 +1,4 @@
+# read docs on jinja urls in flask. 
+Why its used and whats the advantage. 
+read about flask variable rules
+ 
