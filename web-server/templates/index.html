@@ -4,12 +4,18 @@
     <title>
     </title>
     <link rel="stylesheet" type="text/css" href="./static/style.css">
-    <link rel="shortcut icon" href="{{ url_for('static', filename='python_icon.png') }}">
-    <!-- {{}} this is called jinja template. same as executing flask/python.  -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='python_icon.png')}}">
+    
+    <!-- the flower blackets are called jinja template. same as executing flask/python.  -->
     <!-- its built into flask to see and execute this -->
     <!-- allows dynamic loading, and saves from hard coding urls -->
-    <body> 
+    <!-- the parameters we give in urls are called end points. -->
+    <!-- read flask variable rules.  -->
+    
+    <body>     
     <h1>Hey this is going well!!</h1>
+    {{name}}
+    {{id}}
     <script src="./static/script.js"></script>
 </body>    
 </head>
