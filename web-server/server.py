@@ -21,6 +21,10 @@ def home():
 def html_page(page_name):
     return render_template(page_name)
 
+@app.route("/submit_form", methods=['POST', 'GET'])
+def submit_form():
+    return 'Form submitted'
+
 # @app.route("/works.html")
 # def works():
 #     return render_template('works.html')
