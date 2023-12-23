@@ -1,4 +1,11 @@
 # read docs on jinja urls in flask. 
 Why its used and whats the advantage. 
 read about flask variable rules
- 
+
+<!-- the flower blackets are called jinja template. same as executing flask/python.  -->
+    <!-- its built into flask to see and execute this -->
+    <!-- allows dynamic loading, and saves from hard coding urls -->
+    <!-- the parameters we give in urls are called end points. -->
+    <!-- read flask variable rules.  -->
+
+     
