@@ -35,9 +35,12 @@ def save_to_csv(data):
 @app.route("/submit_form", methods=['POST', 'GET'])
 def submit_form():
     if request.method == 'POST':
-        data = request.form.to_dict()
-        save_to_csv(data)
-        return redirect("/thank_you.html")
+        try:
+            data = request.form.to_dict()
+            save_to_csv(data)
+            return redirect("/thank_you.html")
+        except:
+            return 'Something went wrong. Try again please.'
     else: 
         return 'something went wong'
 
